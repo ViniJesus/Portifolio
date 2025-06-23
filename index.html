@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="mb-96 min-h-screen">
+  <body class="min-h-screen">
     <header class="container mt-9 font-sans">
       <nav class="flex items-center justify-between">
         <div>
@@ -34,7 +34,7 @@
 
     <!-- Intro -->
     <main class="container mt-24">
-      <div class="flex items-center gap-20">
+      <div class="flex items-center gap-52">
         <div class="">
           <img
             class="contain shadow-roxo-200 h-[430px] w-[430px] rounded-full shadow-[5px_3px_4px]"
@@ -47,9 +47,7 @@
             Desenvolvedor Front-End
             <span class="bg-roxo-100 inline-block h-1 w-6"></span>
           </h1>
-          <button
-            class="bg-roxo-100 text-roxo-900 mt-5 flex items-center gap-2.5 rounded-md px-4 py-2 font-bold uppercase"
-          >
+          <button class="button">
             Baixar CV <img src="/src/img/Download.svg" alt="" />
           </button>
         </div>
@@ -214,7 +212,148 @@
         <h1 class="text-9xl font-bold text-gray-200">Skills</h1>
       </div>
 
+      <div class="mx-auto mt-10 flex flex-wrap gap-6">
+        <div
+          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
+        >
+          <img src="src/img/figma.svg" alt="Icone do Figma" />
+          <p>Figma</p>
+        </div>
+        <div
+          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
+        >
+          <img src="src/img/html.svg" alt="Icone do HTML" />
+          <p>HTML</p>
+        </div>
+        <div
+          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
+        >
+          <img src="src/img/css.svg" alt="Icone do CSS" />
+          <p>CSS</p>
+        </div>
+        <div
+          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
+        >
+          <img src="src/img/js.svg" alt="Icone do JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div
+          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
+        >
+          <img src="src/img/ts.svg" alt="Icone do Typescript" />
+          <p>TypeScript</p>
+        </div>
+        <div
+          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
+        >
+          <img src="src/img/react.svg" alt="Icone do React" />
+          <p>React</p>
+        </div>
+        <div
+          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
+        >
+          <img src="src/img/sass.svg" alt="Icone do Sass" />
+          <p>Sass</p>
+        </div>
+        <div
+          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
+        >
+          <img src="src/img/tailwind.svg" alt="Icone do Tailwind" />
+          <p>Tailwind</p>
+        </div>
+        <div
+          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
+        >
+          <img
+            class="h-14 w-14"
+            src="src/img/python-original.svg"
+            alt="Icone do Python"
+          />
+          <p>Python</p>
+        </div>
+        <div
+          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
+        >
+          <img src="src/img/django.svg" alt="Icone do Django" />
+          <p>Django</p>
+        </div>
+        <div
+          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
+        >
+          <img src="src/img/git.svg" alt="Icone do Git" />
+          <p>Git</p>
+        </div>
+      </div>
+
       <div></div>
     </section>
+
+    <!-- Contato -->
+    <section class="container mt-40">
+      <div class="relative max-w-md">
+        <img
+          class="absolute inset-0 -left-3 -z-1"
+          src="./src/img/quadrado_deco.svg"
+          alt=""
+        />
+        <h1 class="text-9xl font-bold text-gray-200">Contato</h1>
+      </div>
+
+      <div class="mt-14 flex items-start justify-between">
+        <div class="ml-20 max-w-sm">
+          <p class="text-gray-950">
+            Entre em contato comigo para darmos início a uma colaboração de
+            sucesso! Vamos conversar sobre as necessidades do seu projeto e
+            começar juntos algo realmente incrível.
+          </p>
+          <div class="mx-auto mt-5 flex items-center justify-center gap-5">
+            <img
+              src="src/img/instagram-brands 1.svg"
+              alt="Icone do Instagram"
+            /><img
+              src="src/img/linkedin-brands 1.svg"
+              alt="Icone do Linkedin"
+            /><img src="src/img/github-brands 1.svg" alt="Icone do GitHub" />
+          </div>
+        </div>
+        <form class="mx-auto max-w-md space-y-4">
+          <div class="flex gap-4 space-y-4">
+            <div class="flex flex-col">
+              <label for="name" class="text-base text-gray-950">Nome</label>
+              <input class="input" type="text" id="name" />
+            </div>
+
+            <div class="flex flex-col">
+              <label for="email" class="text-base text-gray-950">Email</label>
+              <input class="input" type="email" id="email" />
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <label for="mensagem" class="text-base text-gray-950"
+              >Mensagem</label
+            >
+            <textarea
+              class="input"
+              name="mensagem"
+              id="mensagem"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <button class="button" type="submit">
+            Enviar
+            <img src="src/img/Send.svg" alt="ícone de envio" class="h-4 w-4" />
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-roxo-950 mt-16 flex h-40 items-center justify-center">
+      <p class="text-roxo-100">
+        © 2025 Vinícius jesus. Todos os direitos reservados.
+      </p>
+    </footer>
   </body>
 </html>
