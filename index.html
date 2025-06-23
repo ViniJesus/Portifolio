@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinícius Jesus</title>
+    <link rel="stylesheet" href="./src/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="mb-96 min-h-screen">
+    <header class="container mt-9 font-sans">
+      <nav class="flex items-center justify-between">
+        <div>
+          <img class="w-20" src="./src/img/Logo.svg" alt="Logo da Pagina VJ" />
+        </div>
+        <ul class="flex justify-between gap-5">
+          <li><a href="#">Home</a></li>
+          <li><a href="#sobremim">Sobre Mim</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Intro -->
+    <main class="container mt-24">
+      <div class="flex items-center gap-20">
+        <div class="">
+          <img
+            class="contain shadow-roxo-200 h-[430px] w-[430px] rounded-full shadow-[5px_3px_4px]"
+            src="/src/img/imagem-intro1.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h1 class="max-w-md text-6xl font-bold">
+            Desenvolvedor Front-End
+            <span class="bg-roxo-100 inline-block h-1 w-6"></span>
+          </h1>
+          <button
+            class="bg-roxo-100 text-roxo-900 mt-5 flex items-center gap-2.5 rounded-md px-4 py-2 font-bold uppercase"
+          >
+            Baixar CV <img src="/src/img/Download.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Sobre Mim -->
+    <section class="container mt-32" id="sobremim">
+      <div class="flex items-center gap-52">
+        <div class="relative max-w-md">
+          <img
+            class="absolute inset-0 -left-3 -z-1"
+            src="./src/img/quadrado_deco.svg"
+            alt=""
+          />
+          <h1 class="text-9xl font-bold text-gray-200">Sobre</h1>
+          <h2 class="ml-48 text-9xl font-bold text-gray-200">Mim</h2>
+        </div>
+        <div
+          class="max-w-2xl space-y-6 *:flex *:items-center *:gap-4 *:text-gray-950"
+        >
+          <div>
+            <img src="src/img/chapeu.svg" alt="Icone de Chapeu de Formatura" />
+            <p>Formação: Análise e Desenvolvimento de Sistemas.</p>
+          </div>
+          <div>
+            <img src="src/img/notebook.svg" alt="Icone de um notebook" />
+            <p>Atuação Atual: Desenvolvedor Full-Stack.</p>
+          </div>
+          <div>
+            <img src="src/img/rocket.svg" alt="Icone de um foguete" />
+            <p>
+              Stack: Sites modernos, APIs robustas e banco de dados
+              estruturados.
+            </p>
+          </div>
+          <div>
+            <img
+              src="src/img/wrench-solid 1.svg"
+              alt="Icone de uma chave de boca"
+            />
+            <p>Foco: Soluções criativas, escalaveis e inteligentes.</p>
+          </div>
+          <div>
+            <img src="src/img/book-solid 1.svg" alt="Icone de um Livro" />
+            <p>
+              Especialização contínua: Cursos voltados ao mercado de
+              desenvolvimento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <div class="bg-roxo-950 -z-10">
+      <section class="-z-10 container mt-32 h-[1000px]">
+        <div class="max-w-md pt-24">
+          <div class="relative">
+            <img
+              class="absolute inset-0 -left-3"
+              src="./src/img/quadrado_projetos.svg"
+              alt=""
+            />
+            <h1 class="text-roxo-800 absolute z-1 text-9xl font-bold">
+              Projetos
+            </h1>
+          </div>
+        </div>
+
+        <div class="*:mas-w-sm flex justify-between gap-14 pt-56">
+          <div>
+            <img
+              class="rounded-t-md"
+              src="src/img/lifesurf.png"
+              alt="Imagem da Home do Projeto Life Surf"
+            />
+            <div class="bg-roxo-925 rounded-b-md p-5">
+              <h1 class="text-roxo-100 text-xl font-bold uppercase">
+                Life Surf
+              </h1>
+              <p class="text-roxo-300 mt-2">
+                Plataforma voltada para compra e aluguel de pranchas de Surf.
+              </p>
+              <ul
+                class="*:bg-roxo-700 *:text-roxo-100 mt-16 flex gap-2 *:rounded-md *:px-2 *:py-1"
+              >
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <ul class="*:text-roxo-200 mt-4 flex items-center gap-2 text-sm">
+                <li><a href="#">Deploy</a></li>
+                <li><a href="#">GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <img
+              class="rounded-t-md"
+              src="src/img/lifesurf.png"
+              alt="Imagem da Home do Projeto Life Surf"
+            />
+            <div class="bg-roxo-925 rounded-b-md p-5">
+              <h1 class="text-roxo-100 text-xl font-bold uppercase">
+                Life Surf
+              </h1>
+              <p class="text-roxo-300 mt-2">
+                Plataforma voltada para compra e aluguel de pranchas de Surf.
+              </p>
+              <ul
+                class="*:bg-roxo-700 *:text-roxo-100 mt-16 flex gap-2 *:rounded-md *:px-2 *:py-1"
+              >
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <ul class="*:text-roxo-200 mt-4 flex items-center gap-2 text-sm">
+                <li><a href="#">Deploy</a></li>
+                <li><a href="#">GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <img
+              class="rounded-t-md"
+              src="src/img/lifesurf.png"
+              alt="Imagem da Home do Projeto Life Surf"
+            />
+            <div class="bg-roxo-925 rounded-b-md p-5">
+              <h1 class="text-roxo-100 text-xl font-bold uppercase">
+                Life Surf
+              </h1>
+              <p class="text-roxo-300 mt-2">
+                Plataforma voltada para compra e aluguel de pranchas de Surf.
+              </p>
+              <ul
+                class="*:bg-roxo-700 *:text-roxo-100 mt-16 flex gap-2 *:rounded-md *:px-2 *:py-1"
+              >
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <ul class="*:text-roxo-200 mt-4 flex items-center gap-2 text-sm">
+                <li><a href="#">Deploy</a></li>
+                <li><a href="#">GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Skills -->
+    <section class="container mt-40">
+      <div class="relative max-w-md">
+        <img
+          class="absolute inset-0 -left-3 -z-1"
+          src="./src/img/quadrado_deco.svg"
+          alt=""
+        />
+        <h1 class="text-9xl font-bold text-gray-200">Skills</h1>
+      </div>
+
+      <div></div>
+    </section>
+  </body>
+</html>

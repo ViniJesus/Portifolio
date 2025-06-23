@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-roxo-50: #f8f5ff;
+  --color-roxo-100: #dccaff;
+  --color-roxo-200: #c5aef3;
+  --color-roxo-300: #b59aeb;
+  --color-roxo-400: #a486de;
+  --color-roxo-500: #9171d0;
+  --color-roxo-600: #7c5cba;
+  --color-roxo-650: #6a4aa8;
+  --color-roxo-700: #573994;
+  --color-roxo-750: #3e2473;
+  --color-roxo-800: #291655;
+  --color-roxo-850: #1d0c40;
+  --color-roxo-900: #14082d;
+  --color-roxo-925: #180a35;
+  --color-roxo-950: #0d0321;
+
+  --font-sans: "Fira Sans", "Roboto", "Open Sans", sans-serif;
+}
+
+@utility container {
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  max-width: 1400px;
+  @media (width >= 40 rem) {
+    padding: 0 1rem;
+  }
+}
