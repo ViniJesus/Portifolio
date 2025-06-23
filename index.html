@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,12 +22,12 @@
         <div>
           <img class="w-20" src="./src/img/Logo.svg" alt="Logo da Pagina VJ" />
         </div>
-        <ul class="flex justify-between gap-5">
-          <li><a href="#">Home</a></li>
-          <li><a href="#sobremim">Sobre Mim</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contato">Contato</a></li>
+        <ul class="flex justify-between gap-5 *:text-gray-950">
+          <li><a class="link" href="#">Home</a></li>
+          <li><a class="link" href="#sobremim">Sobre Mim</a></li>
+          <li><a class="link" href="#projetos">Projetos</a></li>
+          <li><a class="link" href="#skills">Skills</a></li>
+          <li><a class="link" href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -35,7 +35,7 @@
     <!-- Intro -->
     <main class="container mt-24">
       <div class="flex items-center gap-52">
-        <div class="">
+        <div class="animate-jump rounded-full">
           <img
             class="contain shadow-roxo-200 h-[430px] w-[430px] rounded-full shadow-[5px_3px_4px]"
             src="/src/img/imagem-intro1.jpg"
@@ -45,9 +45,9 @@
         <div>
           <h1 class="max-w-md text-6xl font-bold">
             Desenvolvedor Front-End
-            <span class="bg-roxo-100 inline-block h-1 w-6"></span>
+            <span class="bg-roxo-100 animate-blink inline-block h-1 w-8"></span>
           </h1>
-          <button class="button">
+          <button id="baixar-cv" class="button">
             Baixar CV <img src="/src/img/Download.svg" alt="" />
           </button>
         </div>
@@ -103,7 +103,7 @@
     </section>
 
     <!-- Projetos -->
-    <div class="bg-roxo-950 -z-10">
+    <div class="bg-roxo-950 -z-10" id="projetos">
       <section class="-z-10 container mt-32 h-[1000px]">
         <div class="max-w-md pt-24">
           <div class="relative">
@@ -118,20 +118,23 @@
           </div>
         </div>
 
-        <div class="*:mas-w-sm flex justify-between gap-14 pt-56">
-          <div>
+        <div class="flex justify-between gap-14 pt-56">
+          <div
+            class="flex min-h-56 max-w-sm flex-col overflow-hidden rounded-md shadow-lg"
+          >
             <img
-              class="rounded-t-md"
+              class="min-h-64 w-full object-cover"
               src="src/img/lifesurf.png"
               alt="Imagem da Home do Projeto Life Surf"
             />
-            <div class="bg-roxo-925 rounded-b-md p-5">
+            <div class="bg-roxo-925 flex flex-grow flex-col p-5">
               <h1 class="text-roxo-100 text-xl font-bold uppercase">
                 Life Surf
               </h1>
               <p class="text-roxo-300 mt-2">
                 Plataforma voltada para compra e aluguel de pranchas de Surf.
               </p>
+              <div class="flex-grow"></div>
               <ul
                 class="*:bg-roxo-700 *:text-roxo-100 mt-16 flex gap-2 *:rounded-md *:px-2 *:py-1"
               >
@@ -140,50 +143,89 @@
                 <li>JavaScript</li>
               </ul>
               <ul class="*:text-roxo-200 mt-4 flex items-center gap-2 text-sm">
-                <li><a href="#">Deploy</a></li>
-                <li><a href="#">GitHub</a></li>
+                <li>
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://life-surf.vercel.app/"
+                    >Deploy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://github.com/ViniJesus/LifeSurf"
+                    >GitHub</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
-          <div>
+          <div
+            class="flex min-h-56 max-w-sm flex-col overflow-hidden rounded-md shadow-lg"
+          >
             <img
-              class="rounded-t-md"
-              src="src/img/lifesurf.png"
-              alt="Imagem da Home do Projeto Life Surf"
+              class="min-h-64 w-full object-cover"
+              src="src/img/mindtechcare.png"
+              alt="Imagem da Home do Projeto Mindtechcare"
             />
-            <div class="bg-roxo-925 rounded-b-md p-5">
+            <div class="bg-roxo-925 flex flex-grow flex-col p-5">
               <h1 class="text-roxo-100 text-xl font-bold uppercase">
-                Life Surf
+                mindtechcare
               </h1>
               <p class="text-roxo-300 mt-2">
-                Plataforma voltada para compra e aluguel de pranchas de Surf.
+                Plataforma voltada para empresas cuidarem da saúde mental de
+                seus funcionários para prenvenção de Burnout.
               </p>
+              <div class="flex-grow"></div>
+
               <ul
-                class="*:bg-roxo-700 *:text-roxo-100 mt-16 flex gap-2 *:rounded-md *:px-2 *:py-1"
+                class="*:bg-roxo-700 *:text-roxo-100 mt-16 flex flex-wrap gap-2 *:rounded-md *:px-2 *:py-1"
               >
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Tailwind CSS</li>
               </ul>
               <ul class="*:text-roxo-200 mt-4 flex items-center gap-2 text-sm">
-                <li><a href="#">Deploy</a></li>
-                <li><a href="#">GitHub</a></li>
+                <li>
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://mindtechcare.onrender.com/"
+                    >Deploy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://github.com/ViniJesus/MindTechCare"
+                    >GitHub</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
-          <div>
+          <div
+            class="flex min-h-56 max-w-sm flex-col overflow-hidden rounded-md shadow-lg"
+          >
             <img
-              class="rounded-t-md"
-              src="src/img/lifesurf.png"
-              alt="Imagem da Home do Projeto Life Surf"
+              class="min-h-64 w-full object-cover"
+              src="src/img/patydoces.png"
+              alt="Imagem da Home do Projeto Paty Doces"
             />
-            <div class="bg-roxo-925 rounded-b-md p-5">
+            <div class="bg-roxo-925 flex flex-grow flex-col p-5">
               <h1 class="text-roxo-100 text-xl font-bold uppercase">
-                Life Surf
+                Paty Doces
               </h1>
               <p class="text-roxo-300 mt-2">
-                Plataforma voltada para compra e aluguel de pranchas de Surf.
+                Plataforma para confeitaria Paty Doces.
               </p>
+              <div class="flex-grow"></div>
               <ul
                 class="*:bg-roxo-700 *:text-roxo-100 mt-16 flex gap-2 *:rounded-md *:px-2 *:py-1"
               >
@@ -192,8 +234,22 @@
                 <li>JavaScript</li>
               </ul>
               <ul class="*:text-roxo-200 mt-4 flex items-center gap-2 text-sm">
-                <li><a href="#">Deploy</a></li>
-                <li><a href="#">GitHub</a></li>
+                <li>
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://paty-doces.vercel.app/ "
+                    >Deploy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link"
+                    target="_blank"
+                    href="https://github.com/ViniJesus/paty-doces"
+                    >GitHub</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -202,7 +258,7 @@
     </div>
 
     <!-- Skills -->
-    <section class="container mt-40">
+    <section class="container mt-40" id="skills">
       <div class="relative max-w-md">
         <img
           class="absolute inset-0 -left-3 -z-1"
@@ -289,7 +345,7 @@
     </section>
 
     <!-- Contato -->
-    <section class="container mt-40">
+    <section class="container mt-40" id="contato">
       <div class="relative max-w-md">
         <img
           class="absolute inset-0 -left-3 -z-1"
@@ -307,25 +363,42 @@
             começar juntos algo realmente incrível.
           </p>
           <div class="mx-auto mt-5 flex items-center justify-center gap-5">
-            <img
-              src="src/img/instagram-brands 1.svg"
-              alt="Icone do Instagram"
-            /><img
-              src="src/img/linkedin-brands 1.svg"
-              alt="Icone do Linkedin"
-            /><img src="src/img/github-brands 1.svg" alt="Icone do GitHub" />
+            <a
+              href="https://www.instagram.com/vini_sjss?igsh=bTltdmw1cm5najRu"
+              target="_blank"
+              ><img
+                class="transition-all hover:scale-110"
+                src="src/img/instagram-brands 1.svg"
+                alt="Icone do Instagram"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/vinicius-s-jesus/"
+              target="_blank"
+              ><img
+                class="transition-all hover:scale-110"
+                src="src/img/linkedin-brands 1.svg"
+                alt="Icone do Linkedin"
+            /></a>
+            <a href="https://github.com/ViniJesus" target="_blank">
+              <img
+                class="transition-all hover:scale-110"
+                src="src/img/github-brands 1.svg"
+                alt="Icone do GitHub"
+              />
+            </a>
           </div>
         </div>
-        <form class="mx-auto max-w-md space-y-4">
+
+        <form id="contato-form" class="mx-auto max-w-md space-y-4">
           <div class="flex gap-4 space-y-4">
             <div class="flex flex-col">
               <label for="name" class="text-base text-gray-950">Nome</label>
-              <input class="input" type="text" id="name" />
+              <input class="input" type="text" id="name" name="name" />
             </div>
 
             <div class="flex flex-col">
               <label for="email" class="text-base text-gray-950">Email</label>
-              <input class="input" type="email" id="email" />
+              <input class="input" type="email" id="email" name="email" />
             </div>
           </div>
 
@@ -345,6 +418,11 @@
             Enviar
             <img src="src/img/Send.svg" alt="ícone de envio" class="h-4 w-4" />
           </button>
+
+          <p
+            id="form-status"
+            class="mt-5 rounded-md px-4 py-4 text-center text-sm"
+          ></p>
         </form>
       </div>
     </section>
@@ -355,5 +433,7 @@
         © 2025 Vinícius jesus. Todos os direitos reservados.
       </p>
     </footer>
+
+    <script src="src/js/index.js"></script>
   </body>
 </html>

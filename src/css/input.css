@@ -18,6 +18,29 @@
   --color-roxo-950: #0d0321;
 
   --font-sans: "Fira Sans", "Roboto", "Open Sans", sans-serif;
+
+  --animate-blink: blink 1s step-start infinite;
+  --animate-jump: jump 4s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    display: none;
+  }
+  50% {
+    display: inline-block;
+  }
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0);
+  }
 }
 
 @utility container {
@@ -34,5 +57,9 @@
 }
 
 .button {
-  @apply bg-roxo-100 text-roxo-900 mt-5 flex items-center gap-2.5 rounded-md px-4 py-2 font-bold uppercase;
+  @apply bg-roxo-100 hover:bg-roxo-300 active:bg-roxo-500 text-roxo-900 mt-5 flex items-center gap-2.5 rounded-md px-4 py-2 font-bold uppercase;
+}
+
+.link {
+  @apply before:bg-roxo-600 relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:transition-all before:duration-300 before:content-[''] hover:before:w-full;
 }
