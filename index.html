@@ -6,10 +6,7 @@
     <title>Vinícius Jesus</title>
     <link rel="icon" href="src/icons/IconeVJ2.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./src/css/output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,242 +14,171 @@
       rel="stylesheet"
     />
   </head>
-  <body class="min-h-screen">
-    <header class="container mt-9 font-sans">
-      <nav class="flex items-center justify-between">
-        <div>
-          <img class="w-20" src="./src/img/Logo.svg" alt="Logo da Pagina VJ" />
-        </div>
-        <ul class="flex justify-between gap-5 *:text-gray-950">
-          <li><a class="link" href="#">Home</a></li>
-          <li><a class="link" href="#sobremim">Sobre Mim</a></li>
-          <li><a class="link" href="#projetos">Projetos</a></li>
-          <li><a class="link" href="#skills">Skills</a></li>
-          <li><a class="link" href="#contato">Contato</a></li>
+  <body class="min-h-screen font-sans">
+    <header class="container flex items-center justify-between p-4">
+      <a href="./">
+        <img src="src/img/Logo.svg" alt="Logo do portifolio" />
+      </a>
+
+      <nav id="mobile-menu" class="animate-slide-in absolute top-17 right-4 z-50 hidden w-48 flex-col items-center gap-5 rounded-md bg-gray-100 p-6 shadow-lg transition-all">
+        <ul class="space-y-4">
+          <li><a href="#home" class="">Home</a></li>
+          <li><a href="#sobre" class="">Sobre Mim</a></li>
+          <li><a href="#projetos" class="">Projetos</a></li>
+          <li><a href="#skills" class="">Skills</a></li>
+          <li><a href="#contato" class="">Contato</a></li>
         </ul>
       </nav>
+      <!-- Botão hamburguer -->
+      <button id="menu-btn" class="flex flex-col gap-1 rounded-t-md rounded-b-md bg-white px-4 py-4 shadow-md">
+        <span class="h-0.5 w-5 bg-gray-600 transition-all"></span>
+        <span class="h-0.5 w-5 bg-gray-600 transition-all"></span>
+        <span class="h-0.5 w-5 bg-gray-600 transition-all"></span>
+      </button>
     </header>
 
     <!-- Intro -->
-    <main class="container mt-24">
-      <div class="flex items-center gap-52">
-        <div class="animate-jump rounded-full">
-          <img
-            class="contain shadow-roxo-200 h-[430px] w-[430px] rounded-full shadow-[5px_3px_4px]"
-            src="/src/img/imagem-intro1.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <h1 class="max-w-md text-6xl font-bold">
-            Desenvolvedor Front-End<span
-              class="bg-roxo-100 animate-blink inline-block h-1 w-8"
-            ></span>
-          </h1>
-          <button id="baixar-cv" class="button">
-            Baixar CV <img src="/src/img/Download.svg" alt="" />
-          </button>
-        </div>
-      </div>
+    <main class="container mt-16 flex flex-col items-center justify-center gap-8">
+      <img class="shadow-roxo-200 mx-auto w-96 rounded-full shadow-[5px_3px_4px]" src="src/img/imagem-intro1.jpg" alt="Foto de Perfil" />
+      <h1 class="text-center text-4xl font-bold">Desenvolvedor Front-End</h1>
+      <button class="button">
+        Baixar CV
+        <i class="fa-solid text-roxo-900 fa-arrow-down animate-bounce"></i>
+      </button>
     </main>
 
     <!-- Sobre Mim -->
-    <section class="container mt-32" id="sobremim">
-      <div class="flex items-center gap-52">
-        <div class="relative max-w-md">
-          <img
-            class="absolute inset-0 -left-3 -z-1"
-            src="./src/img/quadrado_deco.svg"
-            alt=""
-          />
-          <h1 class="text-9xl font-bold text-gray-200">Sobre</h1>
-          <h2 class="ml-48 text-9xl font-bold text-gray-200">Mim</h2>
+    <section class="container mt-16" id="sobre">
+      <div class="flex flex-col items-center justify-center">
+        <div class="relative">
+          <img class="absolute -top-2 -left-3 -z-10 w-10" src="src/img/quadrado_deco.svg" alt="Quadrado de decoração da pagina" />
+          <h1 class="text-6xl font-bold text-gray-200">Sobre Mim</h1>
         </div>
-        <div
-          class="max-w-2xl space-y-6 *:flex *:items-center *:gap-4 *:text-gray-950"
-        >
-          <div>
-            <img src="src/img/chapeu.svg" alt="Icone de Chapeu de Formatura" />
-            <p>Formação: Análise e Desenvolvimento de Sistemas.</p>
-          </div>
-          <div>
-            <img src="src/img/notebook.svg" alt="Icone de um notebook" />
-            <p>Atuação Atual: Desenvolvedor Full-Stack.</p>
-          </div>
-          <div>
-            <img src="src/img/rocket.svg" alt="Icone de um foguete" />
-            <p>
-              Stack: Sites modernos, APIs robustas e banco de dados
-              estruturados.
-            </p>
-          </div>
-          <div>
-            <img
-              src="src/img/wrench-solid 1.svg"
-              alt="Icone de uma chave de boca"
-            />
-            <p>Foco: Soluções criativas, escalaveis e inteligentes.</p>
-          </div>
-          <div>
-            <img src="src/img/book-solid 1.svg" alt="Icone de um Livro" />
-            <p>
-              Especialização contínua: Cursos voltados ao mercado de
-              desenvolvimento.
-            </p>
-          </div>
+        <div class="mt-10">
+          <ul class="flex flex-col gap-4">
+            <li class="flex items-center gap-4">
+              <img class="w-11" src="src/img/user.svg" alt="Icone de Usuario" />
+              <p class="max-w-sm">Vinícius Silva de Jesus - 21 anos</p>
+            </li>
+            <li class="flex items-center gap-4">
+              <img class="w-11" src="src/img/chapeu.svg" alt="Icone de Usuario" />
+              <p class="max-w-sm">Formação: Análise e Desenvolvimento de Sistemas.</p>
+            </li>
+            <li class="flex items-center gap-4">
+              <img class="w-11" src="src/img/notebook.svg" alt="Icone de Usuario" />
+              <p class="max-w-sm">Atuação Atual: Desenvolvedor Full-Stack.</p>
+            </li>
+            <li class="flex items-center gap-4">
+              <img class="w-11" src="src/img/rocket.svg" alt="Icone de Usuario" />
+              <p class="max-w-sm">Stack: Sites modernos, APIs robustas e banco de dados estruturados.</p>
+            </li>
+            <li class="flex items-center gap-4">
+              <img class="w-11" src="src/img/wrench-solid 1.svg" alt="Icone de Usuario" />
+              <p class="max-w-sm">Foco: Soluções criativas, escalaveis e inteligentes.</p>
+            </li>
+            <li class="flex items-center gap-4">
+              <img class="w-11" src="src/img/book-solid 1.svg" alt="Icone de Usuario" />
+              <p class="max-w-sm">Especialização contínua: Cursos voltados ao mercado de desenvolvimento.</p>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- Projetos -->
-    <div class="bg-roxo-950 -z-10" id="projetos">
-      <section class="-z-10 container mt-32 h-[1000px]">
-        <div class="max-w-md pt-24">
+    <div class="bg-roxo-950 mt-16">
+      <section class="container mx-auto px-4 py-16" id="projetos">
+        <!-- Título -->
+        <div class="flex flex-col items-center">
           <div class="relative">
-            <img
-              class="absolute inset-0 -left-3"
-              src="./src/img/quadrado_projetos.svg"
-              alt=""
-            />
-            <h1 class="text-roxo-800 absolute z-1 text-9xl font-bold">
-              Projetos
-            </h1>
+            <img class="absolute -top-2 -left-3 w-10" src="src/img/quadrado_projetos.svg" alt="Quadrado de decoração da página" />
+            <h1 class="text-roxo-800 relative text-6xl font-bold sm:text-5xl md:text-6xl">Projetos</h1>
           </div>
         </div>
 
-        <div class="flex justify-between gap-14 pt-56">
-          <div
-            class="flex min-h-56 max-w-sm flex-col overflow-hidden rounded-md shadow-lg"
-          >
-            <img
-              class="min-h-64 w-full object-cover"
-              src="src/img/lifesurf.png"
-              alt="Imagem da Home do Projeto Life Surf"
-            />
-            <div class="bg-roxo-925 flex flex-grow flex-col p-5">
-              <h1 class="text-roxo-100 text-xl font-bold uppercase">
-                Life Surf
-              </h1>
-              <p class="text-roxo-300 mt-2">
-                Plataforma voltada para compra e aluguel de pranchas de Surf.
-              </p>
-              <div class="flex-grow"></div>
-              <ul
-                class="*:bg-roxo-700 *:text-roxo-100 mt-16 flex gap-2 *:rounded-md *:px-2 *:py-1"
-              >
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-              <ul class="*:text-roxo-200 mt-4 flex items-center gap-2 text-sm">
-                <li>
-                  <a
-                    class="link"
-                    target="_blank"
-                    href="https://life-surf.vercel.app/"
-                    >Deploy</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="link"
-                    target="_blank"
-                    href="https://github.com/ViniJesus/LifeSurf"
-                    >GitHub</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="flex min-h-56 max-w-sm flex-col overflow-hidden rounded-md shadow-lg"
-          >
-            <img
-              class="min-h-64 w-full object-cover"
-              src="src/img/mindtechcare.png"
-              alt="Imagem da Home do Projeto Mindtechcare"
-            />
-            <div class="bg-roxo-925 flex flex-grow flex-col p-5">
-              <h1 class="text-roxo-100 text-xl font-bold uppercase">
-                mindtechcare
-              </h1>
-              <p class="text-roxo-300 mt-2">
-                Plataforma voltada para empresas cuidarem da saúde mental de
-                seus funcionários para prenvenção de Burnout.
-              </p>
-              <div class="flex-grow"></div>
+        <!-- Card de Projeto -->
+        <div class="mt-16 px-4">
+          <div class="grid snap-x snap-mandatory auto-cols-[80%] grid-flow-col gap-6 overflow-x-auto pb-4 sm:auto-cols-[60%] md:auto-cols-[40%]">
+            <!-- Card Projeto -->
+            <div class="bg-roxo-925 flex snap-center flex-col overflow-hidden rounded-xl shadow-xl">
+              <img class="h-48 w-full object-cover sm:h-64" src="src/img/lifesurf.png" alt="Imagem da Home do Projeto Life Surf" />
+              <div class="flex flex-grow flex-col p-5">
+                <h2 class="text-roxo-100 text-xl font-bold uppercase">Life Surf</h2>
+                <p class="text-roxo-300 mt-2 text-sm">Plataforma voltada para compra e aluguel de pranchas de Surf.</p>
 
-              <ul
-                class="*:bg-roxo-700 *:text-roxo-100 mt-16 flex flex-wrap gap-2 *:rounded-md *:px-2 *:py-1"
-              >
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Tailwind CSS</li>
-              </ul>
-              <ul class="*:text-roxo-200 mt-4 flex items-center gap-2 text-sm">
-                <li>
-                  <a
-                    class="link"
-                    target="_blank"
-                    href="https://mindtechcare.onrender.com/"
-                    >Deploy</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="link"
-                    target="_blank"
-                    href="https://github.com/ViniJesus/MindTechCare"
-                    >GitHub</a
-                  >
-                </li>
-              </ul>
+                <div class="flex-grow"></div>
+
+                <!-- Tags -->
+                <ul class="mt-6 flex flex-wrap gap-2">
+                  <li class="bg-roxo-700 text-roxo-100 rounded-md px-2 py-1 text-xs">HTML</li>
+                  <li class="bg-roxo-700 text-roxo-100 rounded-md px-2 py-1 text-xs">CSS</li>
+                  <li class="bg-roxo-700 text-roxo-100 rounded-md px-2 py-1 text-xs">JavaScript</li>
+                </ul>
+
+                <!-- Links -->
+                <ul class="text-roxo-200 mt-4 flex gap-4 text-sm underline">
+                  <li>
+                    <a href="https://life-surf.vercel.app/" target="_blank">Deploy</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ViniJesus/LifeSurf" target="_blank">GitHub</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div
-            class="flex min-h-56 max-w-sm flex-col overflow-hidden rounded-md shadow-lg"
-          >
-            <img
-              class="min-h-64 w-full object-cover"
-              src="src/img/patydoces.png"
-              alt="Imagem da Home do Projeto Paty Doces"
-            />
-            <div class="bg-roxo-925 flex flex-grow flex-col p-5">
-              <h1 class="text-roxo-100 text-xl font-bold uppercase">
-                Paty Doces
-              </h1>
-              <p class="text-roxo-300 mt-2">
-                Plataforma para confeitaria Paty Doces.
-              </p>
-              <div class="flex-grow"></div>
-              <ul
-                class="*:bg-roxo-700 *:text-roxo-100 mt-16 flex gap-2 *:rounded-md *:px-2 *:py-1"
-              >
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-              <ul class="*:text-roxo-200 mt-4 flex items-center gap-2 text-sm">
-                <li>
-                  <a
-                    class="link"
-                    target="_blank"
-                    href="https://paty-doces.vercel.app/ "
-                    >Deploy</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="link"
-                    target="_blank"
-                    href="https://github.com/ViniJesus/paty-doces"
-                    >GitHub</a
-                  >
-                </li>
-              </ul>
+            <div class="bg-roxo-925 flex snap-center flex-col overflow-hidden rounded-xl shadow-xl">
+              <img class="h-48 w-full object-cover sm:h-64" src="src/img/mindtechcare.png" alt="Imagem da Home do Projeto MindTechCare" />
+              <div class="flex flex-grow flex-col p-5">
+                <h2 class="text-roxo-100 text-xl font-bold uppercase">Mindtechcare</h2>
+                <p class="text-roxo-300 mt-2 text-sm">Plataforma para empresas cuidarem da saúde mental de seus funcionários para prevenir burnout.</p>
+
+                <div class="flex-grow"></div>
+
+                <ul class="mt-6 flex flex-wrap gap-2">
+                  <li class="bg-roxo-700 text-roxo-100 rounded-md px-2 py-1 text-xs">HTML</li>
+                  <li class="bg-roxo-700 text-roxo-100 rounded-md px-2 py-1 text-xs">CSS</li>
+                  <li class="bg-roxo-700 text-roxo-100 rounded-md px-2 py-1 text-xs">JavaScript</li>
+                  <li class="bg-roxo-700 text-roxo-100 rounded-md px-2 py-1 text-xs">Python</li>
+                  <li class="bg-roxo-700 text-roxo-100 rounded-md px-2 py-1 text-xs">Django</li>
+                  <li class="bg-roxo-700 text-roxo-100 rounded-md px-2 py-1 text-xs">Tailwind CSS</li>
+                </ul>
+
+                <!-- Links -->
+                <ul class="text-roxo-200 mt-4 flex gap-4 text-sm underline">
+                  <li>
+                    <a href="https://life-surf.vercel.app/" target="_blank">Deploy</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ViniJesus/LifeSurf" target="_blank">GitHub</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-roxo-925 flex snap-center flex-col overflow-hidden rounded-xl shadow-xl">
+              <img class="h-48 w-full object-cover sm:h-64" src="src/img/patydoces.png" alt="Imagem da Home do Projeto Life Surf" />
+              <div class="flex flex-grow flex-col p-5">
+                <h2 class="text-roxo-100 text-xl font-bold uppercase">Paty Doces</h2>
+                <p class="text-roxo-300 mt-2 text-sm">Plataforma de uma confeitaria para encomenda de doces e salgados.</p>
+
+                <div class="flex-grow"></div>
+
+                <!-- Tags -->
+                <ul class="mt-6 flex flex-wrap gap-2">
+                  <li class="bg-roxo-700 text-roxo-100 rounded-md px-2 py-1 text-xs">HTML</li>
+                  <li class="bg-roxo-700 text-roxo-100 rounded-md px-2 py-1 text-xs">CSS</li>
+                  <li class="bg-roxo-700 text-roxo-100 rounded-md px-2 py-1 text-xs">JavaScript</li>
+                </ul>
+
+                <!-- Links -->
+                <ul class="text-roxo-200 mt-4 flex gap-4 text-sm underline">
+                  <li>
+                    <a href="https://life-surf.vercel.app/" target="_blank">Deploy</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ViniJesus/LifeSurf" target="_blank">GitHub</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -260,160 +186,102 @@
     </div>
 
     <!-- Skills -->
-    <section class="container mt-40" id="skills">
-      <div class="relative max-w-md">
-        <img
-          class="absolute inset-0 -left-3 -z-1"
-          src="./src/img/quadrado_deco.svg"
-          alt=""
-        />
-        <h1 class="text-9xl font-bold text-gray-200">Skills</h1>
-      </div>
-
-      <div class="mx-auto mt-10 flex flex-wrap gap-6">
-        <div
-          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
-        >
-          <img src="src/img/figma.svg" alt="Icone do Figma" />
-          <p>Figma</p>
+    <section class="container mt-16" id="skills">
+      <div class="flex flex-col items-center">
+        <div class="relative">
+          <img class="absolute -top-2 -left-3 -z-10 w-10" src="src/img/quadrado_deco.svg" alt="Quadrado de decoração da pagina" />
+          <h1 class="text-6xl font-bold text-gray-200">Skills</h1>
         </div>
-        <div
-          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
-        >
-          <img src="src/img/html.svg" alt="Icone do HTML" />
-          <p>HTML</p>
-        </div>
-        <div
-          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
-        >
-          <img src="src/img/css.svg" alt="Icone do CSS" />
-          <p>CSS</p>
-        </div>
-        <div
-          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
-        >
-          <img src="src/img/js.svg" alt="Icone do JavaScript" />
-          <p>JavaScript</p>
-        </div>
-        <div
-          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
-        >
-          <img src="src/img/ts.svg" alt="Icone do Typescript" />
-          <p>TypeScript</p>
-        </div>
-        <div
-          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
-        >
-          <img src="src/img/react.svg" alt="Icone do React" />
-          <p>React</p>
-        </div>
-        <div
-          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
-        >
-          <img src="src/img/sass.svg" alt="Icone do Sass" />
-          <p>Sass</p>
-        </div>
-        <div
-          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
-        >
-          <img src="src/img/tailwind.svg" alt="Icone do Tailwind" />
-          <p>Tailwind</p>
-        </div>
-        <div
-          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
-        >
-          <img
-            class="h-14 w-14"
-            src="src/img/python-original.svg"
-            alt="Icone do Python"
-          />
-          <p>Python</p>
-        </div>
-        <div
-          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
-        >
-          <img src="src/img/django.svg" alt="Icone do Django" />
-          <p>Django</p>
-        </div>
-        <div
-          class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold"
-        >
-          <img src="src/img/git.svg" alt="Icone do Git" />
-          <p>Git</p>
+        <div class="mx-auto mt-10 grid grid-cols-2 gap-6">
+          <div class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
+            <img src="src/img/figma.svg" alt="Icone do Figma" />
+            <p>Figma</p>
+          </div>
+          <div class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
+            <img src="src/img/html.svg" alt="Icone do HTML" />
+            <p>HTML</p>
+          </div>
+          <div class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
+            <img src="src/img/css.svg" alt="Icone do CSS" />
+            <p>CSS</p>
+          </div>
+          <div class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
+            <img src="src/img/js.svg" alt="Icone do JavaScript" />
+            <p>JavaScript</p>
+          </div>
+          <div class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
+            <img src="src/img/ts.svg" alt="Icone do Typescript" />
+            <p>TypeScript</p>
+          </div>
+          <div class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
+            <img src="src/img/react.svg" alt="Icone do React" />
+            <p>React</p>
+          </div>
+          <div class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
+            <img src="src/img/sass.svg" alt="Icone do Sass" />
+            <p>Sass</p>
+          </div>
+          <div class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
+            <img src="src/img/tailwind.svg" alt="Icone do Tailwind" />
+            <p>Tailwind</p>
+          </div>
+          <div class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
+            <img class="h-14 w-14" src="src/img/python-original.svg" alt="Icone do Python" />
+            <p>Python</p>
+          </div>
+          <div class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
+            <img src="src/img/django.svg" alt="Icone do Django" />
+            <p>Django</p>
+          </div>
+          <div class="text-roxo-700 bg-roxo-50 flex items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
+            <img src="src/img/git.svg" alt="Icone do Git" />
+            <p>Git</p>
+          </div>
+          <div class="text-roxo-700 bg-roxo-50 flex items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
+            <img src="src/img/selenium-original.svg" alt="Icone do Selenium" />
+            <p>Selenium</p>
+          </div>
         </div>
       </div>
-
-      <div></div>
     </section>
 
     <!-- Contato -->
-    <section class="container mt-40" id="contato">
-      <div class="relative max-w-md">
-        <img
-          class="absolute inset-0 -left-3 -z-1"
-          src="./src/img/quadrado_deco.svg"
-          alt=""
-        />
-        <h1 class="text-9xl font-bold text-gray-200">Contato</h1>
-      </div>
-
-      <div class="mt-14 flex items-start justify-between">
-        <div class="ml-20 max-w-sm">
-          <p class="text-gray-950">
-            Entre em contato comigo para darmos início a uma colaboração de
-            sucesso! Vamos conversar sobre as necessidades do seu projeto e
-            começar juntos algo realmente incrível.
+    <section class="container mt-20" id="contato">
+      <div class="flex flex-col items-center">
+        <div class="relative">
+          <img class="absolute -top-2 -left-3 -z-10 w-10" src="src/img/quadrado_deco.svg" alt="Quadrado de decoração da pagina" />
+          <h1 class="text-6xl font-bold text-gray-200">Contato</h1>
+        </div>
+        <div class="mt-10">
+          <p class="text-center">
+            Entre em contato comigo para darmos início a uma colaboração de sucesso! Vamos conversar sobre as necessidades do seu projeto e começar juntos algo realmente incrível.
           </p>
           <div class="mx-auto mt-5 flex items-center justify-center gap-5">
-            <a
-              href="https://www.instagram.com/vini_sjss?igsh=bTltdmw1cm5najRu"
-              target="_blank"
-              ><img
-                class="transition-all hover:scale-110"
-                src="src/img/instagram-brands 1.svg"
-                alt="Icone do Instagram"
+            <a href="https://www.instagram.com/vini_sjss?igsh=bTltdmw1cm5najRu" target="_blank"
+              ><img class="transition-all hover:scale-110" src="src/img/instagram-brands 1.svg" alt="Icone do Instagram"
             /></a>
-            <a
-              href="https://www.linkedin.com/in/vinicius-s-jesus/"
-              target="_blank"
-              ><img
-                class="transition-all hover:scale-110"
-                src="src/img/linkedin-brands 1.svg"
-                alt="Icone do Linkedin"
-            /></a>
+            <a href="https://www.linkedin.com/in/vinicius-s-jesus/" target="_blank"><img class="transition-all hover:scale-110" src="src/img/linkedin-brands 1.svg" alt="Icone do Linkedin" /></a>
             <a href="https://github.com/ViniJesus" target="_blank">
-              <img
-                class="transition-all hover:scale-110"
-                src="src/img/github-brands 1.svg"
-                alt="Icone do GitHub"
-              />
+              <img class="transition-all hover:scale-110" src="src/img/github-brands 1.svg" alt="Icone do GitHub" />
             </a>
           </div>
         </div>
-
-        <form id="contato-form" class="mx-auto max-w-md space-y-4">
-          <div class="flex gap-4 space-y-4">
-            <div class="flex flex-col">
+        <form id="contato-form" class="mt-10 w-full space-y-4">
+          <div class="flex flex-col gap-4 space-y-4">
+            <div class="flex w-full flex-col">
               <label for="name" class="text-base text-gray-950">Nome</label>
               <input class="input" type="text" id="name" name="name" />
             </div>
 
-            <div class="flex flex-col">
+            <div class="flex w-full flex-col">
               <label for="email" class="text-base text-gray-950">Email</label>
               <input class="input" type="email" id="email" name="email" />
             </div>
           </div>
 
-          <div class="flex flex-col">
-            <label for="mensagem" class="text-base text-gray-950"
-              >Mensagem</label
-            >
-            <textarea
-              class="input"
-              name="mensagem"
-              id="mensagem"
-              rows="5"
-            ></textarea>
+          <div class="flex w-full flex-col">
+            <label for="mensagem" class="text-base text-gray-950">Mensagem</label>
+            <textarea class="input" name="mensagem" id="mensagem" rows="5"></textarea>
           </div>
 
           <button class="button" type="submit">
@@ -421,19 +289,16 @@
             <img src="src/img/Send.svg" alt="ícone de envio" class="h-4 w-4" />
           </button>
 
-          <p
+          <!-- <p
             id="form-status"
             class="mt-5 rounded-md px-4 py-4 text-center text-sm"
-          ></p>
+          ></p> -->
         </form>
       </div>
     </section>
 
-    <!-- footer -->
-    <footer class="bg-roxo-950 mt-16 flex h-40 items-center justify-center">
-      <p class="text-roxo-100">
-        © 2025 Vinícius jesus. Todos os direitos reservados.
-      </p>
+    <footer class="bg-roxo-950 mt-16 flex h-20 items-center justify-center md:h-40">
+      <p class="text-roxo-100">© 2025 Vinícius jesus. Todos os direitos reservados.</p>
     </footer>
 
     <script src="src/js/index.js"></script>
