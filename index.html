@@ -15,13 +15,16 @@
     />
   </head>
   <body class="min-h-screen font-sans">
-    <header class="container flex items-center justify-between p-4">
+    <header class="container flex items-center justify-between py-8 lg:px-0">
       <a href="./">
         <img src="src/img/Logo.svg" alt="Logo do portifolio" />
       </a>
 
-      <nav id="mobile-menu" class="animate-slide-in absolute top-17 right-4 z-50 hidden w-48 flex-col items-center gap-5 rounded-md bg-gray-100 p-6 shadow-lg transition-all">
-        <ul class="space-y-4">
+      <nav
+        id="mobile-menu"
+        class="max-lg:animate-slide-in z-50 hidden items-center gap-5 rounded-md p-6 transition-all max-lg:absolute max-lg:top-17 max-lg:right-4 max-lg:w-48 max-lg:bg-gray-100 max-lg:shadow-lg lg:block"
+      >
+        <ul class="space-y-4 lg:flex lg:flex-row lg:justify-between lg:gap-5 lg:space-y-0">
           <li><a href="#home" class="">Home</a></li>
           <li><a href="#sobre" class="">Sobre Mim</a></li>
           <li><a href="#projetos" class="">Projetos</a></li>
@@ -30,7 +33,7 @@
         </ul>
       </nav>
       <!-- Botão hamburguer -->
-      <button id="menu-btn" class="flex flex-col gap-1 rounded-t-md rounded-b-md bg-white px-4 py-4 shadow-md">
+      <button id="menu-btn" class="flex flex-col gap-1 rounded-t-md rounded-b-md bg-white px-4 py-4 shadow-md lg:hidden">
         <span class="h-0.5 w-5 bg-gray-600 transition-all"></span>
         <span class="h-0.5 w-5 bg-gray-600 transition-all"></span>
         <span class="h-0.5 w-5 bg-gray-600 transition-all"></span>
@@ -38,47 +41,52 @@
     </header>
 
     <!-- Intro -->
-    <main class="container mt-16 flex flex-col items-center justify-center gap-8">
-      <img class="shadow-roxo-200 mx-auto w-96 rounded-full shadow-[5px_3px_4px]" src="src/img/imagem-intro1.jpg" alt="Foto de Perfil" />
-      <h1 class="text-center text-4xl font-bold">Desenvolvedor Front-End</h1>
-      <button class="button">
-        Baixar CV
-        <i class="fa-solid text-roxo-900 fa-arrow-down animate-bounce"></i>
-      </button>
+    <main class="container mt-16 flex flex-col items-center justify-center gap-8 lg:flex-row lg:justify-start lg:gap-52">
+      <img class="shadow-roxo-200 animate-jump mx-auto w-96 rounded-full shadow-[5px_3px_4px] lg:mx-0 lg:h-[430px] lg:w-[430px]" src="src/img/imagem-intro1.jpg" alt="Foto de Perfil" />
+      <div>
+        <h1 class="text-center text-4xl font-bold lg:max-w-md lg:text-left lg:text-6xl">Desenvolvedor Front-End<span class="bg-roxo-100 animate-blink hidden h-1 w-8 lg:inline-block"></span></h1>
+        <button class="button mx-auto lg:mx-0">
+          Baixar CV
+          <i class="fa-solid text-roxo-900 fa-arrow-down animate-bounce"></i>
+        </button>
+      </div>
     </main>
 
     <!-- Sobre Mim -->
     <section class="container mt-16" id="sobre">
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-center lg:flex-row lg:justify-start lg:gap-48">
         <div class="relative">
-          <img class="absolute -top-2 -left-3 -z-10 w-10" src="src/img/quadrado_deco.svg" alt="Quadrado de decoração da pagina" />
-          <h1 class="text-6xl font-bold text-gray-200">Sobre Mim</h1>
+          <img class="absolute -top-2 -left-3 -z-10 max-lg:w-10" src="src/img/quadrado_deco.svg" alt="Quadrado de decoração da pagina" />
+          <h1 class="text-6xl font-bold text-gray-200 lg:max-w-md lg:text-9xl">
+            Sobre
+            <span class="lg:ml-36">Mim</span>
+          </h1>
         </div>
         <div class="mt-10">
           <ul class="flex flex-col gap-4">
             <li class="flex items-center gap-4">
-              <img class="w-11" src="src/img/user.svg" alt="Icone de Usuario" />
-              <p class="max-w-sm">Vinícius Silva de Jesus - 21 anos</p>
+              <img class="max-lg:w-11" src="src/img/user.svg" alt="Icone de Usuario" />
+              <p class="max-w-sm lg:max-w-md">Vinícius Silva de Jesus - 21 anos</p>
             </li>
             <li class="flex items-center gap-4">
-              <img class="w-11" src="src/img/chapeu.svg" alt="Icone de Usuario" />
-              <p class="max-w-sm">Formação: Análise e Desenvolvimento de Sistemas.</p>
+              <img class="max-lg:w-11" src="src/img/chapeu.svg" alt="Icone de Usuario" />
+              <p class="max-w-sm lg:max-w-md">Formação: Análise e Desenvolvimento de Sistemas.</p>
             </li>
             <li class="flex items-center gap-4">
-              <img class="w-11" src="src/img/notebook.svg" alt="Icone de Usuario" />
-              <p class="max-w-sm">Atuação Atual: Desenvolvedor Full-Stack.</p>
+              <img class="max-lg:w-11" src="src/img/notebook.svg" alt="Icone de Usuario" />
+              <p class="max-w-sm lg:max-w-md">Atuação Atual: Desenvolvedor Full-Stack.</p>
             </li>
             <li class="flex items-center gap-4">
-              <img class="w-11" src="src/img/rocket.svg" alt="Icone de Usuario" />
-              <p class="max-w-sm">Stack: Sites modernos, APIs robustas e banco de dados estruturados.</p>
+              <img class="max-lg:w-11" src="src/img/rocket.svg" alt="Icone de Usuario" />
+              <p class="max-w-sm lg:max-w-md">Stack: Sites modernos, APIs robustas e banco de dados estruturados.</p>
             </li>
             <li class="flex items-center gap-4">
-              <img class="w-11" src="src/img/wrench-solid 1.svg" alt="Icone de Usuario" />
-              <p class="max-w-sm">Foco: Soluções criativas, escalaveis e inteligentes.</p>
+              <img class="max-lg:w-11" src="src/img/wrench-solid 1.svg" alt="Icone de Usuario" />
+              <p class="max-w-sm lg:max-w-md">Foco: Soluções criativas, escalaveis e inteligentes.</p>
             </li>
             <li class="flex items-center gap-4">
-              <img class="w-11" src="src/img/book-solid 1.svg" alt="Icone de Usuario" />
-              <p class="max-w-sm">Especialização contínua: Cursos voltados ao mercado de desenvolvimento.</p>
+              <img class="max-lg:w-11" src="src/img/book-solid 1.svg" alt="Icone de Usuario" />
+              <p class="max-w-sm lg:max-w-md">Especialização contínua: Cursos voltados ao mercado de desenvolvimento.</p>
             </li>
           </ul>
         </div>
@@ -89,16 +97,16 @@
     <div class="bg-roxo-950 mt-16">
       <section class="container mx-auto px-4 py-16" id="projetos">
         <!-- Título -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center lg:flex-row">
           <div class="relative">
-            <img class="absolute -top-2 -left-3 w-10" src="src/img/quadrado_projetos.svg" alt="Quadrado de decoração da página" />
-            <h1 class="text-roxo-800 relative text-6xl font-bold sm:text-5xl md:text-6xl">Projetos</h1>
+            <img class="absolute -top-2 -left-3 max-lg:w-10" src="src/img/quadrado_projetos.svg" alt="Quadrado de decoração da página" />
+            <h1 class="text-roxo-800 relative text-6xl font-bold lg:text-9xl">Projetos</h1>
           </div>
         </div>
 
         <!-- Card de Projeto -->
         <div class="mt-16 px-4">
-          <div class="grid snap-x snap-mandatory auto-cols-[80%] grid-flow-col gap-6 overflow-x-auto pb-4 sm:auto-cols-[60%] md:auto-cols-[40%]">
+          <div class="grid snap-x snap-mandatory auto-cols-[80%] grid-flow-col gap-6 overflow-x-auto pb-4 sm:auto-cols-[60%] md:auto-cols-[40%] lg:flex lg:justify-between *:lg:max-w-sm">
             <!-- Card Projeto -->
             <div class="bg-roxo-925 flex snap-center flex-col overflow-hidden rounded-xl shadow-xl">
               <img class="h-48 w-full object-cover sm:h-64" src="src/img/lifesurf.png" alt="Imagem da Home do Projeto Life Surf" />
@@ -267,7 +275,7 @@
           </div>
         </div>
         <form id="contato-form" class="mt-10 w-full space-y-4">
-          <div class="flex flex-col gap-4 space-y-4">
+          <div class="flex flex-col space-y-4 md:gap-4">
             <div class="flex w-full flex-col">
               <label for="name" class="text-base text-gray-950">Nome</label>
               <input class="input" type="text" id="name" name="name" />

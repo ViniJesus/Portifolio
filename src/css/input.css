@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-roxo-50: #f8f5ff;
@@ -17,10 +17,10 @@
   --color-roxo-925: #180a35;
   --color-roxo-950: #0d0321;
 
-  --font-sans: "Fira Sans", "Roboto", "Open Sans", sans-serif;
+  --font-sans: 'Fira Sans', 'Roboto', 'Open Sans', sans-serif;
 
   --animate-blink: blink 1s step-start infinite;
-  --animate-jump: jump 4s ease-in-out infinite;
+  --animate-jump: jump 5s ease-in-out infinite;
   --animate-slide-in: slideIn 0.4s ease-out forwards;
 }
 
@@ -59,7 +59,7 @@
   margin: 0 auto;
   padding: 0 0.5rem;
   max-width: 1400px;
-  @media (width >= 40 rem) {
+  @media (width >= 40rem) {
     padding: 0 1rem;
   }
 }
