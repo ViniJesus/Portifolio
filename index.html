@@ -22,14 +22,14 @@
 
       <nav
         id="mobile-menu"
-        class="max-lg:animate-slide-in z-50 hidden items-center gap-5 rounded-md p-6 transition-all max-lg:absolute max-lg:top-17 max-lg:right-4 max-lg:w-48 max-lg:bg-gray-100 max-lg:shadow-lg lg:block"
+        class="max-lg:animate-slide-in z-50 hidden items-center gap-5 rounded-md p-6 transition-all max-lg:absolute max-lg:top-21 max-lg:right-4 max-lg:w-48 max-lg:bg-gray-100 max-lg:shadow-lg lg:block"
       >
         <ul class="space-y-4 lg:flex lg:flex-row lg:justify-between lg:gap-5 lg:space-y-0">
-          <li><a href="#home" class="">Home</a></li>
-          <li><a href="#sobre" class="">Sobre Mim</a></li>
-          <li><a href="#projetos" class="">Projetos</a></li>
-          <li><a href="#skills" class="">Skills</a></li>
-          <li><a href="#contato" class="">Contato</a></li>
+          <li><a href="#home" class="link">Home</a></li>
+          <li><a href="#sobre" class="link">Sobre Mim</a></li>
+          <li><a href="#projetos" class="link">Projetos</a></li>
+          <li><a href="#skills" class="link">Skills</a></li>
+          <li><a href="#contato" class="link">Contato</a></li>
         </ul>
       </nav>
       <!-- Botão hamburguer -->
@@ -109,7 +109,7 @@
           <div class="grid snap-x snap-mandatory auto-cols-[80%] grid-flow-col gap-6 overflow-x-auto pb-4 sm:auto-cols-[60%] md:auto-cols-[40%] lg:flex lg:justify-between *:lg:max-w-sm">
             <!-- Card Projeto -->
             <div class="bg-roxo-925 flex snap-center flex-col overflow-hidden rounded-xl shadow-xl">
-              <img class="h-48 w-full object-cover sm:h-64" src="src/img/lifesurf.png" alt="Imagem da Home do Projeto Life Surf" />
+              <img class="h-48 w-full object-cover object-center sm:h-64" src="src/img/lifesurf.png" alt="Imagem da Home do Projeto Life Surf" />
               <div class="flex flex-grow flex-col p-5">
                 <h2 class="text-roxo-100 text-xl font-bold uppercase">Life Surf</h2>
                 <p class="text-roxo-300 mt-2 text-sm">Plataforma voltada para compra e aluguel de pranchas de Surf.</p>
@@ -135,7 +135,7 @@
               </div>
             </div>
             <div class="bg-roxo-925 flex snap-center flex-col overflow-hidden rounded-xl shadow-xl">
-              <img class="h-48 w-full object-cover sm:h-64" src="src/img/mindtechcare.png" alt="Imagem da Home do Projeto MindTechCare" />
+              <img class="h-48 w-full bg-center object-cover sm:h-64" src="src/img/mindtechcare.png" alt="Imagem da Home do Projeto MindTechCare" />
               <div class="flex flex-grow flex-col p-5">
                 <h2 class="text-roxo-100 text-xl font-bold uppercase">Mindtechcare</h2>
                 <p class="text-roxo-300 mt-2 text-sm">Plataforma para empresas cuidarem da saúde mental de seus funcionários para prevenir burnout.</p>
@@ -163,7 +163,7 @@
               </div>
             </div>
             <div class="bg-roxo-925 flex snap-center flex-col overflow-hidden rounded-xl shadow-xl">
-              <img class="h-48 w-full object-cover sm:h-64" src="src/img/patydoces.png" alt="Imagem da Home do Projeto Life Surf" />
+              <img class="h-48 w-full bg-center object-cover sm:h-64" src="src/img/patydoces.png" alt="Imagem da Home do Projeto Life Surf" />
               <div class="flex flex-grow flex-col p-5">
                 <h2 class="text-roxo-100 text-xl font-bold uppercase">Paty Doces</h2>
                 <p class="text-roxo-300 mt-2 text-sm">Plataforma de uma confeitaria para encomenda de doces e salgados.</p>
@@ -194,13 +194,13 @@
     </div>
 
     <!-- Skills -->
-    <section class="container mt-16" id="skills">
-      <div class="flex flex-col items-center">
+    <section class="container mt-16 lg:mt-32" id="skills">
+      <div class="flex flex-col items-center lg:items-start">
         <div class="relative">
-          <img class="absolute -top-2 -left-3 -z-10 w-10" src="src/img/quadrado_deco.svg" alt="Quadrado de decoração da pagina" />
-          <h1 class="text-6xl font-bold text-gray-200">Skills</h1>
+          <img class="absolute -top-2 -left-3 -z-10 max-lg:w-10" src="src/img/quadrado_deco.svg" alt="Quadrado de decoração da pagina" />
+          <h1 class="text-6xl font-bold text-gray-200 lg:text-9xl">Skills</h1>
         </div>
-        <div class="mx-auto mt-10 grid grid-cols-2 gap-6">
+        <div class="mx-auto mt-10 grid grid-cols-2 gap-6 lg:flex lg:flex-wrap">
           <div class="text-roxo-700 bg-roxo-50 flex max-w-40 items-center justify-center gap-3 rounded-md px-4 py-3 font-bold">
             <img src="src/img/figma.svg" alt="Icone do Figma" />
             <p>Figma</p>
@@ -254,59 +254,62 @@
     </section>
 
     <!-- Contato -->
-    <section class="container mt-20" id="contato">
-      <div class="flex flex-col items-center">
+    <section class="container mt-20 lg:mt-32" id="contato">
+      <div class="flex flex-col items-center lg:items-start">
         <div class="relative">
-          <img class="absolute -top-2 -left-3 -z-10 w-10" src="src/img/quadrado_deco.svg" alt="Quadrado de decoração da pagina" />
-          <h1 class="text-6xl font-bold text-gray-200">Contato</h1>
+          <img class="absolute -top-2 -left-3 -z-10 max-lg:w-10" src="src/img/quadrado_deco.svg" alt="Quadrado de decoração da pagina" />
+          <h1 class="text-6xl font-bold text-gray-200 lg:text-9xl">Contato</h1>
         </div>
-        <div class="mt-10">
-          <p class="text-center">
-            Entre em contato comigo para darmos início a uma colaboração de sucesso! Vamos conversar sobre as necessidades do seu projeto e começar juntos algo realmente incrível.
-          </p>
-          <div class="mx-auto mt-5 flex items-center justify-center gap-5">
-            <a href="https://www.instagram.com/vini_sjss?igsh=bTltdmw1cm5najRu" target="_blank"
-              ><img class="transition-all hover:scale-110" src="src/img/instagram-brands 1.svg" alt="Icone do Instagram"
-            /></a>
-            <a href="https://www.linkedin.com/in/vinicius-s-jesus/" target="_blank"><img class="transition-all hover:scale-110" src="src/img/linkedin-brands 1.svg" alt="Icone do Linkedin" /></a>
-            <a href="https://github.com/ViniJesus" target="_blank">
-              <img class="transition-all hover:scale-110" src="src/img/github-brands 1.svg" alt="Icone do GitHub" />
-            </a>
+        <div class="justify-center lg:flex lg:w-full lg:gap-32">
+          <div class="mt-10 ml-10">
+            <p class="text-center text-balance lg:max-w-lg lg:text-left lg:text-xl">
+              Entre em contato comigo para darmos início a uma colaboração de sucesso! Vamos conversar sobre as necessidades do seu projeto e começar juntos algo realmente incrível.
+            </p>
+            <div class="mx-auto mt-5 flex items-center gap-5 max-lg:justify-center">
+              <a href="https://www.instagram.com/vini_sjss?igsh=bTltdmw1cm5najRu" target="_blank"
+                ><img class="transition-all hover:scale-110" src="src/img/instagram-brands 1.svg" alt="Icone do Instagram"
+              /></a>
+              <a href="https://www.linkedin.com/in/vinicius-s-jesus/" target="_blank"><img class="transition-all hover:scale-110" src="src/img/linkedin-brands 1.svg" alt="Icone do Linkedin" /></a>
+              <a href="https://github.com/ViniJesus" target="_blank">
+                <img class="transition-all hover:scale-110" src="src/img/github-brands 1.svg" alt="Icone do GitHub" />
+              </a>
+            </div>
           </div>
-        </div>
-        <form id="contato-form" class="mt-10 w-full space-y-4">
-          <div class="flex flex-col space-y-4 md:gap-4">
-            <div class="flex w-full flex-col">
-              <label for="name" class="text-base text-gray-950">Nome</label>
-              <input class="input" type="text" id="name" name="name" />
+          <span class="bg-roxo-100/40 h-auto w-1"></span>
+          <form id="contato-form" class="mt-10 w-1/2 space-y-4 max-lg:mx-auto">
+            <div class="flex flex-col space-y-4 md:gap-4 lg:flex-row">
+              <div class="flex w-full flex-col">
+                <label for="name" class="text-base text-gray-950 lg:text-xl">Nome</label>
+                <input class="input" type="text" id="name" name="name" />
+              </div>
+
+              <div class="flex w-full flex-col">
+                <label for="email" class="text-base text-gray-950 lg:text-xl">Email</label>
+                <input class="input" type="email" id="email" name="email" />
+              </div>
             </div>
 
             <div class="flex w-full flex-col">
-              <label for="email" class="text-base text-gray-950">Email</label>
-              <input class="input" type="email" id="email" name="email" />
+              <label for="mensagem" class="text-base text-gray-950 lg:text-xl">Mensagem</label>
+              <textarea class="input" name="mensagem" id="mensagem" rows="5"></textarea>
             </div>
-          </div>
 
-          <div class="flex w-full flex-col">
-            <label for="mensagem" class="text-base text-gray-950">Mensagem</label>
-            <textarea class="input" name="mensagem" id="mensagem" rows="5"></textarea>
-          </div>
+            <button class="button lg:text-lg" type="submit">
+              Enviar
+              <img src="src/img/Send.svg" alt="ícone de envio" class="h-4 w-4" />
+            </button>
 
-          <button class="button" type="submit">
-            Enviar
-            <img src="src/img/Send.svg" alt="ícone de envio" class="h-4 w-4" />
-          </button>
-
-          <!-- <p
+            <!-- <p
             id="form-status"
             class="mt-5 rounded-md px-4 py-4 text-center text-sm"
           ></p> -->
-        </form>
+          </form>
+        </div>
       </div>
     </section>
 
-    <footer class="bg-roxo-950 mt-16 flex h-20 items-center justify-center md:h-40">
-      <p class="text-roxo-100">© 2025 Vinícius jesus. Todos os direitos reservados.</p>
+    <footer class="bg-roxo-950 mt-16 flex h-20 items-center justify-center md:h-40 lg:mt-20">
+      <p class="text-roxo-100 lg:text-lg">© 2025 Vinícius jesus. Todos os direitos reservados.</p>
     </footer>
 
     <script src="src/js/index.js"></script>
